@@ -1,10 +1,19 @@
 ﻿namespace Programmers
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int[,] map =
+            {
+                {1,0,1,1,1},
+                {1,0,1,0,1},
+                {1,0,1,1,1},
+                {1,1,1,0,1},
+                {0,0,0,0,1}
+            };
+            int path = GameMapShortestDistance.MapShortest(map);
+            Console.WriteLine(path);
         }
     }
 }

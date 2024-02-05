@@ -11,7 +11,7 @@ namespace Programmers
         const int CostStraight = 1;
         const int INF = 99999;
 
-        public int MapShortest(int[,] maps)
+        public static int MapShortest(int[,] maps)
         {
             int ySize = maps.GetLength(0);
             int xSize = maps.GetLength(1);
@@ -19,9 +19,9 @@ namespace Programmers
             Point start = new Point(0, 0);
             Point end = new Point(ySize - 1, xSize - 1);
 
-            Node[,] nodes = new Node[ySize, xSize];
-            List<Point> path = new List<Point>();
-            bool[,] visited = new bool[ySize, xSize];
+            Node[,] nodes = new Node[ySize, xSize];    // 계산여부
+            List<Point> path = new List<Point>();      // 최단경로
+            bool[,] visited = new bool[ySize, xSize];  // 방문여부
 
             Node startNode = new Node(start, new Point(), 0, Heruistic(start, end));
             nodes[start.y, start.x] = startNode;
@@ -52,7 +52,7 @@ namespace Programmers
                 if (nextNode.pos.y == end.y && nextNode.pos.x == end.x)
                 {
                     Point point = end;
-                    while (!(nextNode.pos.y == start.y && nextNode.pos.x == start.x))
+                    while (!(point.y == start.y && point.x == start.x))
                     {
                         path.Add(point);
                         point = nodes[point.y, point.x].parent;
