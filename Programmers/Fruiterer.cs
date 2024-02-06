@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Programmers
 {
+    // 과일 장수
     internal class Fruiterer
     {
         public static int Solution(int k, int m, int[] score)
