@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Programmers
 {
+    // 게임 맵 최단거리
     public class GameMapShortestDistance
     {
         const int CostStraight = 1;
