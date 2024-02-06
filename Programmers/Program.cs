@@ -4,16 +4,9 @@
     {
         static void Main(string[] args)
         {
-            int[,] map =
-            {
-                {1,0,1,1,1},
-                {1,0,1,0,1},
-                {1,0,1,1,1},
-                {1,1,1,0,1},
-                {0,0,0,0,1}
-            };
-            int path = GameMapShortestDistance.Solution(map);
-            Console.WriteLine(path);
+            int[] score = { 1, 2, 3, 1, 2, 3, 1 };
+            int sell = Fruiterer.Solution(3, 4, score);
+            Console.WriteLine(sell);
         }
     }
 }
