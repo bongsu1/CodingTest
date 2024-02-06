@@ -11,7 +11,7 @@ namespace Programmers
         const int CostStraight = 1;
         const int INF = 99999;
 
-        public static int MapShortest(int[,] maps)
+        public static int Solution(int[,] maps)
         {
             int ySize = maps.GetLength(0);
             int xSize = maps.GetLength(1);

@@ -12,7 +12,7 @@
                 {1,1,1,0,1},
                 {0,0,0,0,1}
             };
-            int path = GameMapShortestDistance.MapShortest(map);
+            int path = GameMapShortestDistance.Solution(map);
             Console.WriteLine(path);
         }
     }
