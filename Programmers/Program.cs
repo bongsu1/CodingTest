@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-            int[] score = { 1, 2, 3, 1, 2, 3, 1 };
-            int sell = Fruiterer.Solution(3, 4, score);
-            Console.WriteLine(sell);
+            int[,] wires = { { 1, 3 }, { 2, 3 }, { 3, 4 }, { 4, 5 }, { 4, 6 }, { 4, 7 }, { 7, 8 }, { 7, 9 } };
+            int split = SplittingThePowerGridInTwo.Solution(9, wires);
+            Console.WriteLine(split);
         }
     }
 }
