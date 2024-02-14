@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-            string[] board = { "...D..R", ".D.G...", "....D.D", "D....D.", "..D...." };
-            int shortest = RicochetRobot.Solution(board);
-            Console.WriteLine(shortest);
+            int[] ingredient = { 2, 1, 1, 2, 3, 1, 2, 3, 1 };
+            int hamberger = MakingHamburgers.Solution(ingredient);
+            Console.WriteLine(hamberger);
         }
     }
 }
