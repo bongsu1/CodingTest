@@ -20,7 +20,9 @@ namespace Programmers
                 {
                     graph[i, j] = board[i][j];
                     if (board[i][j] == 'R')
+                    {
 
+                    }
                 }
             }
 
